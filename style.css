@@ -9,6 +9,8 @@ body {
   font-family: sans-serif;
 }
 
+/* HEADER */
+
 header {
   background-color: rgb(51, 175, 163);
   color: whitesmoke;
@@ -50,6 +52,8 @@ header nav .nav-element p.main-nav-element a.main-nav {
   color: rgb(51, 175, 163);
 }
 
+/* MAIN */
+
 main {
   background-color: rgb(51, 175, 163);
   color: whitesmoke;
@@ -84,6 +88,7 @@ main p.statement em {
 
 section.about-me {
   background-color: whitesmoke;
+  border-bottom: solid black 5px;
 }
 
 h2 {
@@ -93,11 +98,33 @@ h2 {
 
 section.about-me .intro {
   margin: auto;
+  width: 55ch;
 }
 
-section.about-me .intro h3 {
+h3 {
+  margin: 2rem 0 2rem 0;
 }
 
 section.about-me .intro .intro-text {
   width: 55ch;
+  line-height: 1.5rem;
+}
+
+section.about-me .skills {
+  margin: auto;
+  width: 55ch;
+  line-height: 1.5rem;
+}
+
+section.about-me .skills .tech-skills-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 100px;
+  margin-left: 2rem;
+  line-height: 1.5rem;
+}
+
+/* PORTFOLIO */
+section.portfolio {
+  background-color: pink;
 }
