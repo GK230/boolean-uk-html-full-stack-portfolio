@@ -23,6 +23,7 @@ header p.name {
   padding: 0.5rem;
   margin-left: 1rem;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 header nav {
@@ -50,6 +51,7 @@ header nav .nav-element p.main-nav-element a.main-nav {
   padding: 0.3rem;
 
   color: rgb(51, 175, 163);
+  font-weight: bold;
 }
 
 /* MAIN */
@@ -66,15 +68,16 @@ main .header-center {
 }
 
 main h1 {
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 5rem;
+  line-height: 6rem;
   padding-top: 5rem;
 }
 
 main p.statement {
   width: 55ch;
   margin: 3rem 0 5rem 0;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
 main p.statement strong {
