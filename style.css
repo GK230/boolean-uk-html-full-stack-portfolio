@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgb(51, 175, 163);
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 10px;
+}
+
+header p.name {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: right;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  grid-gap: 5px;
+}
+
+header nav .nav-element {
+  display: inline-block;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+header nav .nav-element p.main-nav-element {
+  text-align: center;
+}
+
+header nav .nav-element p.main-nav-element a.main-nav {
+  display: block;
+  text-decoration: none;
+  padding: 0.3rem;
+
+  color: rgb(51, 175, 163);
+}
+
+main {
+  background-color: rgb(51, 175, 163);
+  color: whitesmoke;
+  border-bottom: 5px black solid;
+}
+
+main .header-center {
+  margin: auto;
+  width: 55ch;
+}
+
+main h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  padding-top: 5rem;
+}
+
+main p.statement {
+  width: 55ch;
+  margin: 3rem 0 5rem 0;
+  line-height: 1.5rem;
+}
+
+main p.statement strong {
+  color: black;
+}
+
+main p.statement em {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+section.about-me {
+  background-color: whitesmoke;
+}
+
+h2 {
+  text-align: center;
+  padding: 3rem;
+}
+
+section.about-me .intro {
+  margin: auto;
+}
+
+section.about-me .intro h3 {
+}
+
+section.about-me .intro .intro-text {
+  width: 55ch;
+}
