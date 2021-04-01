@@ -128,3 +128,41 @@ section.about-me .skills .tech-skills-container {
 section.portfolio {
   background-color: pink;
 }
+
+section.portfolio .projects {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 50px;
+  margin: auto;
+  width: 700px;
+}
+
+section.portfolio .projects .project1,
+section.portfolio .projects .project2,
+section.portfolio .projects .project3 {
+  border: solid darkred 5px;
+  padding: 1.5rem;
+  background-color: whitesmoke;
+}
+
+h4 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+section.portfolio .projects .project1 p a.project-link,
+section.portfolio .projects .project2 p a.project-link,
+section.portfolio .projects .project3 p a.project-link {
+  text-align: center;
+}
+
+section.portfolio .projects .project1 a.project-link,
+section.portfolio .projects .project2 a.project-link,
+section.portfolio .projects .project3 a.project-link {
+  display: block;
+  width: 150px;
+  background-color: darkred;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
