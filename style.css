@@ -146,6 +146,7 @@ section.portfolio .projects .project3 {
   border: solid darkred 5px;
   padding: 1.5rem;
   background-color: whitesmoke;
+  border-radius: 5px;
 }
 
 h4 {
@@ -168,4 +169,6 @@ section.portfolio .projects .project3 a.project-link {
   color: whitesmoke;
   text-decoration: none;
   font-size: 0.75rem;
+  padding: 0.2rem;
+  font-weight: bold;
 }
