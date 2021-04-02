@@ -185,8 +185,8 @@ section.portfolio .projects .project3 a.project-link {
   background-color: darkred;
   color: whitesmoke;
   text-decoration: none;
-  font-size: 0.75rem;
-  padding: 0.2rem;
+  font-size: 1rem;
+  padding: 0.3rem;
   font-weight: bold;
 }
 
@@ -209,4 +209,31 @@ section.portfolio .projects .project2 .project-links .github p a.github-link,
 section.portfolio .projects .project3 .project-links .github p a.github-link {
   color: darkred;
   text-decoration: none;
+}
+
+section.experience {
+  display: grid;
+  grid-template-rows: 200px 200px;
+}
+
+section.experience .job {
+  margin-left: 20rem;
+  width: 800px;
+  padding-bottom: 3rem;
+}
+
+section.experience .job .job-title {
+  margin-bottom: 1.5rem;
+}
+
+section.experience p {
+}
+
+footer {
+  background-color: midnightblue;
+}
+
+footer .copyright p {
+  color: white;
+  padding: 2rem;
 }
