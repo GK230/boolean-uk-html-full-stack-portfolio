@@ -134,25 +134,25 @@ section.portfolio {
 
 section.portfolio .projects {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 300px 300px 300px;
   grid-gap: 50px;
   margin: auto;
-  width: 700px;
+  width: 1000px;
 }
 
 section.portfolio .projects .project1 {
   display: grid;
-  grid-template-rows: 50px 100px 60px;
+  grid-template-rows: 50px 200px 60px;
 }
 
 section.portfolio .projects .project2 {
   display: grid;
-  grid-template-rows: 50px 100px 60px;
+  grid-template-rows: 50px 200px 60px;
 }
 
 section.portfolio .projects .project3 {
   display: grid;
-  grid-template-rows: 50px 100px 60px;
+  grid-template-rows: 50px 200px 60px;
 }
 
 section.portfolio .projects .project1,
@@ -162,6 +162,8 @@ section.portfolio .projects .project3 {
   padding: 1.5rem;
   background-color: whitesmoke;
   border-radius: 5px;
+  height: 400px;
+  margin-bottom: 3rem;
 }
 
 h4 {
@@ -179,11 +181,32 @@ section.portfolio .projects .project1 a.project-link,
 section.portfolio .projects .project2 a.project-link,
 section.portfolio .projects .project3 a.project-link {
   display: block;
-  width: 150px;
+  width: 250px;
   background-color: darkred;
   color: whitesmoke;
   text-decoration: none;
   font-size: 0.75rem;
   padding: 0.2rem;
   font-weight: bold;
+}
+
+section.portfolio .projects .project1 .project-links,
+section.portfolio .projects .project2 .project-links,
+section.portfolio .projects .project3 .project-links {
+  display: grid;
+  grid-template-rows: 30px 30px;
+  place-items: center;
+}
+
+section.portfolio .projects .project1 .project-links .github p,
+section.portfolio .projects .project2 .project-links .github p,
+section.portfolio .projects .project3 .project-links .github p {
+  margin: auto;
+}
+
+section.portfolio .projects .project1 .project-links .github p a.github-link,
+section.portfolio .projects .project2 .project-links .github p a.github-link,
+section.portfolio .projects .project3 .project-links .github p a.github-link {
+  color: darkred;
+  text-decoration: none;
 }
