@@ -140,6 +140,21 @@ section.portfolio .projects {
   width: 700px;
 }
 
+section.portfolio .projects .project1 {
+  display: grid;
+  grid-template-rows: 50px 100px 60px;
+}
+
+section.portfolio .projects .project2 {
+  display: grid;
+  grid-template-rows: 50px 100px 60px;
+}
+
+section.portfolio .projects .project3 {
+  display: grid;
+  grid-template-rows: 50px 100px 60px;
+}
+
 section.portfolio .projects .project1,
 section.portfolio .projects .project2,
 section.portfolio .projects .project3 {
