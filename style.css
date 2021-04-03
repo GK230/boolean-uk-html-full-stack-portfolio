@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   font-family: sans-serif;
@@ -67,10 +71,11 @@ main .header-center {
   width: 55ch;
 }
 
-main h1 {
+main h1.heading {
   font-size: 5rem;
   line-height: 6rem;
   padding-top: 5rem;
+  text-align: left;
 }
 
 main p.statement {
@@ -135,7 +140,8 @@ section.portfolio {
 
 section.portfolio .projects {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+
   grid-gap: 50px;
   margin: auto;
   width: 1000px;
@@ -214,13 +220,12 @@ section.portfolio .projects .project3 .project-links .github p a.github-link {
 
 section.experience {
   display: grid;
-  grid-template-rows: 200px 200px;
-  margin-top: -8rem;
+  grid-template-rows: 1fr 1fr;
   border-bottom: black solid 5px;
 }
 
 section.experience .job {
-  margin-left: 20rem;
+  margin: auto;
   width: 800px;
   padding-bottom: 3rem;
 }
@@ -236,4 +241,71 @@ footer {
 footer .copyright p {
   color: white;
   padding: 2rem;
+}
+
+footer .back-to-top-button {
+  position: sticky;
+  border: black solid 2px;
+  background-color: red;
+  width: 200px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+footer .back-to-top-button p.back-to-top {
+  text-align: right;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer .back-to-top-button p.back-to-top a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.info {
+  width: 500px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1034px) {
+  section.portfolio .projects {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 827px) {
+  section.experience .job {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 681px) {
+  main p.statement {
+    width: 40ch;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  section.experience .job {
+    width: 300px;
+  }
+
+  main p.statement {
+    width: 30ch;
+    margin-left: 2rem;
+  }
 }
