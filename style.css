@@ -130,6 +130,7 @@ section.about-me .skills .tech-skills-container {
 /* PORTFOLIO */
 section.portfolio {
   background-color: pink;
+  border-bottom: black solid 5px;
 }
 
 section.portfolio .projects {
@@ -214,6 +215,8 @@ section.portfolio .projects .project3 .project-links .github p a.github-link {
 section.experience {
   display: grid;
   grid-template-rows: 200px 200px;
+  margin-top: -8rem;
+  border-bottom: black solid 5px;
 }
 
 section.experience .job {
@@ -224,9 +227,6 @@ section.experience .job {
 
 section.experience .job .job-title {
   margin-bottom: 1.5rem;
-}
-
-section.experience p {
 }
 
 footer {
