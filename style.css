@@ -10,6 +10,9 @@ html {
 
 body {
   font-family: sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
 }
 
 /* HEADER */
@@ -264,10 +267,6 @@ footer .back-to-top-button p.back-to-top a {
   font-weight: bold;
 }
 
-body {
-  background-color: whitesmoke;
-}
-
 h1 {
   text-align: center;
   padding: 2rem;
@@ -277,6 +276,8 @@ h1 {
   width: 500px;
   margin: auto;
 }
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1062px) {
   section.portfolio .projects {
@@ -303,21 +304,59 @@ h1 {
   }
 }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 539px) {
   header nav {
-    display: block;
+    display: inline-block;
+    margin: 2rem 10rem;
+    padding: 0;
+    max-width: 10rem;
   }
 
   header nav .nav-element {
-    margin: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  header nav .nav-element main .header-center {
+    max-width: 20rem;
+  }
+
+  main .header-center h1.heading {
+    font-size: 3rem;
+  }
+
+  section.about-me .intro {
+    max-width: 15rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  section.about-me .intro p.intro-text {
+    max-width: 20rem;
+  }
+
+  section.about-me .skills {
+    max-width: 15rem;
+    margin-left: 4rem;
+  }
+
+  section.about-me .skills h3 {
+    margin-bottom: 2rem;
   }
 
   section.about-me .skills .tech-skills-container {
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    grid-gap: 1rem;
+    padding: 0;
+  }
+
+  section.about-me .skills .tech-skills-container .front-end {
+    margin: 0;
+    padding: 0;
   }
 
   section.experience .job {
-    width: 300px;
+    width: 30rem;
   }
 
   main p.statement {
@@ -332,9 +371,26 @@ h1 {
   }
 }
 
-@media screen and (max-width: 495px) {
-  main h1.heading {
+@media screen and (max-width: 499px) {
+  header nav {
+    width: 6rem;
+    margin-right: 1rem;
+    margin-left: 5rem;
+    padding-right: 0;
+  }
+
+  header nav .nav-element {
+    margin-left: 0rem;
+  }
+  main .header-center {
+    width: 20rem;
+  }
+  main .header-center h1.heading {
     font-size: 3rem;
+  }
+
+  main p.statement {
+    width: 15rem;
   }
 
   section.about-me {
@@ -342,15 +398,53 @@ h1 {
   }
 
   section.about-me .intro .intro-text {
-    width: 45ch;
+    width: 15rem;
   }
 
   section.about-me .skills .tech-skills-container {
-    margin-left: 5rem;
+    margin-left: 1.5rem;
+  }
+
+  section.portfolio .projects {
+    width: 15rem;
+    margin-left: 3rem;
+  }
+
+  section.experience {
+    grid-gap: 3rem;
+  }
+
+  section.experience .job {
+    width: 15rem;
   }
 }
 
-@media screen and (max-width: 378) {
+@media screen and (max-width: 375) {
+  header {
+    grid-template-columns: 50px 50px;
+    grid-gap: 5px;
+  }
+
+  header p.name {
+    margin: 0;
+    font-size: 0.2rem;
+  }
+
+  header nav {
+    width: 0rem;
+    margin-left: 0rem;
+    margin-right: 0;
+  }
+
+  header nav .nav-element {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav .nav-element p.main-nav-element {
+    margin-left: 0;
+  }
+
   main h1.heading {
     font-size: 0.3rem;
   }
@@ -361,5 +455,15 @@ h1 {
 
   section.about-me .skills .tech-skills-container {
     margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 375) {
+  header {
+    grid-template-columns: 30px 30px;
+  }
+
+  header p.name {
+    font-size: 0.5rem;
   }
 }
