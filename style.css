@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   font-family: sans-serif;
 }
 
@@ -140,7 +139,7 @@ section.portfolio {
 
 section.portfolio .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 
   grid-gap: 50px;
   margin: auto;
@@ -279,10 +278,10 @@ h1 {
   margin: auto;
 }
 
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1062px) {
   section.portfolio .projects {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 600px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -292,14 +291,31 @@ h1 {
   }
 }
 
-@media screen and (max-width: 681px) {
+@media screen and (max-width: 680px) {
   main p.statement {
-    width: 40ch;
+    width: 35ch;
     margin-left: 2rem;
+  }
+
+  section.portfolio .projects {
+    max-width: 500px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 541px) {
+  header nav {
+    display: block;
+  }
+
+  header nav .nav-element {
+    margin: 0.5rem;
+  }
+
+  section.about-me .skills .tech-skills-container {
+    margin-left: 3rem;
+  }
+
   section.experience .job {
     width: 300px;
   }
@@ -307,5 +323,43 @@ h1 {
   main p.statement {
     width: 30ch;
     margin-left: 2rem;
+  }
+
+  section.portfolio .projects {
+    max-width: 400px;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 495px) {
+  main h1.heading {
+    font-size: 3rem;
+  }
+
+  section.about-me {
+    padding: 2rem;
+  }
+
+  section.about-me .intro .intro-text {
+    width: 45ch;
+  }
+
+  section.about-me .skills .tech-skills-container {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 378) {
+  main h1.heading {
+    font-size: 0.3rem;
+  }
+
+  section.about-me .intro .intro-text {
+    width: 25ch;
+  }
+
+  section.about-me .skills .tech-skills-container {
+    margin-left: 1rem;
   }
 }
